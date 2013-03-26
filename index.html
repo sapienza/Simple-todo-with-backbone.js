@@ -1,0 +1,18 @@
+<div id="tasks">
+<ul></ul>
+<form>
+<input id="new_task" type="text" placeholder="Enter new task">
+<button>Add</button>
+</form>
+
+<script id="task_template" type="text/template">
+<li data-id="<%= id %>">
+<%= item %>
+<a class="remove-item">[x]</a>
+</li>
+</script>
+
+<script src="js/jquery-1.7.1.min.js"></script>
+<script src="js/underscore-min.js"></script>
+<script src="js/backbone-min.js"></script>
+<script src="js/app.js"></script>
